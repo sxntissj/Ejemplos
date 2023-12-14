@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  margin-left: 45px; 
+  background-color: rgba(245, 245, 245, 0.979);
+}
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; 
+  color: #333; 
+  padding: 10px; 
+  transform: scaleY(0.7); 
+  text-align: right; 
+}
+
+header h1 {
+  font-size: 18px; 
+  margin-right: 20px; 
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  margin: 0 auto; 
+  max-width: 1200px; 
+  margin-top: 50px;
+} 
+
+
+.menu {
+  background: #333;
+  color: #fff;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu-header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.menu-header h1 {
+  margin: 0;
+}
+
+.menu-header img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items li {
+  margin-bottom: 5px;
+}
+
+.menu-items li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu-items li a:hover {
+  background: #555;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+
+/* Estilos de los cuadros de información */
+.dashboard {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 50px; 
+  margin-left: 200px; 
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+
+.info-box {
+  width: 180px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+
+.info-box .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-box img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.number {
+  font-size: 2em;
+  margin: 0;
+}
+
+.info-box h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+#visitas {
+  background-color: #3498db;
+}
+
+#ventas {
+  background-color: #2ecc71;
+}
+
+#ordenes {
+  background-color: #f1c40f;
+}
+
+#usuarios {
+  background-color: #e74c3c;
+}
+
+.info-box:hover {
+  filter: brightness(90%);
+  transform: translateY(-5px);
+}
+
+
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.tablas{
+  border-collapse: collapse;
+  position: absolute;
+  display: flex;
+  margin-top: 300px;
+  margin-left: 200px;
+  border: 1px none #000;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.tablas th, .tablas td { padding: 12px 15px; }
+caption {
+  padding: 0.3em;
+  color: #fff;
+  background: #000;
+}
+
+
+.tablas thead tr { color: #ffffff; text-align: middle; }
+
+.tablas tbody tr { border-bottom: 1px solid #dddddd; } 
+.tablas tbody tr:nth-of-type(even) { background-color: #f3f3f3; } 
+.tablast tbody tr:last-of-type { border-bottom: 2px solid #009879; }

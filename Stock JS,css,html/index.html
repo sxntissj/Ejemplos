@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vera santiago</h1>
+    </header>
+    <div class="menu">
+        <div class="menu-header">
+            <img src="img/layer.png">
+            <h1>Electronic</h1>
+        </div>
+        <ul class="menu-items">
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></l>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div class="dashboard">
+            <div class="info-box" id="visitas" onclick="mostrarTabla('tabla1', )">
+                <div class="number">500</div>
+                <h2>Visitas Diarias</h2>
+                <img src="img/ojo.png">
+            </div>
+            <div class="info-box" id="ventas" onclick="mostrarTabla('tabla2', )">
+                <div class="number">20</div>
+                <h2>Ventas</h2>
+                <img src="img/avion-de-papel.png">
+            </div>
+            <div class="info-box" id="ordenes" onclick="mostrarTabla('tabla3', )">
+                <div class="number">10</div>
+                <h2>Nuevas Órdenes</h2>
+                <img src="img/dolar.png">
+            </div>
+            <div class="info-box" id="usuarios" onclick="mostrarTabla('tabla4', '#e74c3c')">
+                <div class="number">50</div>
+                <h2>Nuevos Usuarios</h2>
+                <img src="img/agregar-usuario.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tablas">
+        <table class="tabla" id="tabla1" style="display: none"></table>
+        <table class="tabla" id="tabla2" style="display: none"></table>
+        <table class="tabla" id="tabla3" style="display: none"></table>
+        <table class="tabla" id="tabla4" style="display: none"></table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
