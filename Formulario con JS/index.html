@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Personas</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+    <h1>FORMULARIO DE PERSONAS</h1>
+    <div class="container">
+        <div id="step1">
+            <h3>PASO 1</h3>
+            <hr>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <span class="error" id="nombreError">Por favor, ingrese el Nombre.</span>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+            <span class="error" id="apellidoError">Por favor, ingrese el Apellido.</span>
+            <button class="step-button" id="nextStep1">SIGUIENTE</button>
+        </div>
+        <div id="step2" style="display: none;">
+            <h3>PASO 2</h3>
+            <hr>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" required>
+            <span class="error" id="dniError">Ingrese solo números.</span> 
+            <label for "cuil">CUIL:</label>
+            <input type="text" id="cuil" required>
+            <span class="error" id="cuilError">Ingrese solo números.</span>
+            <button class="step-button previous-button" id="prevStep2">ANTERIOR</button>
+            <button class="step-button" id="nextStep2">SIGUIENTE</button>
+        </div>
+        <div id="step3" style="display: none;">
+            <h3>RESUMEN</h3>
+            <hr>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td id="summaryNombre"></td>
+                </tr>
+                <tr>
+                    <th>Apellido</th>
+                    <td id="summaryApellido"></td>
+                </tr>
+                <tr>
+                    <th>DNI</th>
+                    <td id="summaryDNI"></td>
+                </tr>
+                <tr>
+                    <th>CUIL</th>
+                    <td id="summaryCUIL"></td>
+                </tr>
+            </table>
+            <button class="step-button previous-button" id="prevStep3">ANTERIOR</button>
+            <button class="step-button confirm-button" id="confirm">CONFIRMAR</button>
+        </div>
+    </div>
+
+    
+<div class="modal" id="customModal">
+    <div class="modal-content">
+        <h3>¿Está seguro de enviar el formulario?</h3>
+        <button id="confirmSI">Sí, enviar</button>
+        <button id="confirmCANCELAR">Cancelar</button>
+    </div>
+</div>
+
+<div id="successMessage" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h3>Formulario enviado con éxito</h3>
+        <img src="img/check.png" alt="icono check">
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+    <footer>
+        <p>Vera Santiago Matias</p>
+    </footer>
+</body>
+</html>
